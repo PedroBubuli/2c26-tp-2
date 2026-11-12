@@ -1,17 +1,21 @@
-#  Local .terraform directories
+# Terraform
 **/.terraform/*
-
-# .tfstate files
+terraform.tfstate
+terraform.tfvars
 *.tfstate
 *.tfstate.*
-
-# .tfvars files
 *.tfvars
+*.tfvars.json
+crash.log
 
-# Node
+# Node & dependencies
 node_modules/
 
-# Local files
+# Llaves privadas y credenciales
+*.pem
+key.pem
+
+# Archivos de salida de infraestructura y endpoints locales
 ip
 public_ip
 lb_dns
@@ -22,6 +26,5 @@ vmss_hosts
 base_url
 src.zip
 pubkey
-*.pem
 *.bak
-.vscode
+.vscode/
